@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+    .section-pad {
+        display: none;
+    }
+}
+
 .list__whatWeDo {
     display: flex;
     gap: 30px;

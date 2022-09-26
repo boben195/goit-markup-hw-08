@@ -1,6 +1,6 @@
 .modal-form-title {
   font-style: normal;
-  @include font(20px, 700, 1.15);
+  @include font(20px, 700, 1.5);
   text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 12px;
@@ -90,6 +90,9 @@
   @extend %align;
   margin-bottom: 30px;
   line-height: calc(24 / 14);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .modal-form-icon {
@@ -120,5 +123,16 @@
 
   .modal-form-checkbox:checked + .modal-form-icon & {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    @include font(20px, 700, 1.15);
+  }
+  .modal-form-check {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
