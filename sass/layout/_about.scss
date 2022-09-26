@@ -9,14 +9,26 @@
   line-height: 1.7;
   margin-bottom: 30px;
 }
+.about__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
 .about__svg__icon {
+  
   width: 70px;
   height: 70px;
 }
 
 @media screen and (min-width: 768px) {
+  .about__title {
+    text-align: left;
+  }
   .about__list {
-    box-sizing: content-box;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,6 +36,20 @@
   }
 
   .about__width {
-    width: 354px;
+    width: 338px;
   }
+}
+@media screen and (min-width: 1200px) {
+
+  .about__list {
+    display: flex;
+    
+    
+  }
+  .about__width {
+    width: 270px;
+  }
+    .about__text {
+      margin-bottom: 0;
+    }
 }

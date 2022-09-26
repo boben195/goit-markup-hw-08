@@ -29,13 +29,11 @@
   border: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 767px) {
-  .list-member {
+.list-member {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   gap: 30px;
-}
 }
 
 /*.marg-member {
@@ -43,8 +41,6 @@
   height: 622px;
   
 }*/
-  
-
 
 .member-svg {
   @extend %align;
@@ -75,23 +71,27 @@
   background-color: #f5f4fa;
 }
 
-
 @media screen and (min-width: 768px) {
   .list-member {
-      display: flex;
-      flex-wrap: wrap;
-      
-      
-    }
-
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .marg-member {
+    width: 339px;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .list-member {
     display: flex;
     align-items: center;
     gap: 30px;
   }
+    .marg-member {
+      width: 270px;
+    }
 }
 
 /*.section-title {
