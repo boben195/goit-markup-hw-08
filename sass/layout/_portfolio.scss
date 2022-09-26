@@ -68,3 +68,14 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+
+@media screen and  (min-width: 768px) {
+  .border-li {
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .border-li {
+    width: 370px;
+  }
+}

@@ -27,12 +27,12 @@
           >
           <ul class="list navigation__menu">
             <li class="navigation__item">
-              <a class="link navigation__link" href="">Студія </a>
+              <a class="link navigation__link link--static link__line" href=""
+                >Студія
+              </a>
             </li>
             <li class="navigation__item">
-              <a
-                class="link navigation__link link--static link__port"
-                href="./portfolio.html"
+              <a class="link navigation__link" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -41,6 +41,12 @@
             </li>
           </ul>
         </nav>
+
+        <button type="button" class="open-mobile-menu" data-menu-open>
+          <svg class="open-mobile-menu__icon">
+            <use href="images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <ul class="list navigation__addres">
           <li class="navigation__item__adr navigation__item__marg">
@@ -59,6 +65,54 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="close-mobile-menu__btn" data-menu-close>
+            <svg class="close-mobile-menu__icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-list-navigation">
+            <li class="mobile-menu-item__navigation">
+              <a class="link mobile-menu__navigation" href="">Студія</a>
+            </li>
+            <li class="mobile-menu-item__navigation">
+              <a class="link mobile-menu__navigation" href="">Портфоліо</a>
+            </li>
+            <li class="mobile-menu-item__navigation">
+              <a class="link mobile-menu__navigation" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mobile-list-contact">
+            <li class="mobile-menu-item__contact__tel">
+              <a class="link mobile-menu__tel" href="">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-item__contact__mail">
+              <a class="link mobile-menu__mail" href="">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="list mobile-list-social">
+            <li class="mobile-menu-item__social">
+              <a class="link mobile-menu__social mobile-menu__after" href=""
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu-item__social">
+              <a class="link mobile-menu__social mobile-menu__after" href=""
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu-item__social">
+              <a class="link mobile-menu__social mobile-menu__after" href=""
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu-item__social">
+              <a class="link mobile-menu__social" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -134,8 +188,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-1-mobile.jpg"
                         alt="Ноут недорого"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -205,8 +257,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-2-mobile.jpg"
                         alt="Баскетбол наше все"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -278,8 +328,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-3-mobile.jpg"
                         alt="Мммм тунець"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -349,8 +397,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-4-mobile.jpg"
                         alt="Такі собі навушники"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -420,8 +466,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-5-mobile.jpg"
                         alt="Дві коробочки"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -491,8 +535,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-6-mobile.jpg"
                         alt="Карта світу"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -562,8 +604,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-7-mobile.jpg"
                         alt="Книжка з суїцидальною жінко"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -633,8 +673,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-8-mobile.jpg"
                         alt="Лейба"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -704,8 +742,6 @@
                       <img
                         src="./images/portfolio/mobile/portfolio-9-mobile.jpg"
                         alt="Руки на клаві"
-                        width="370"
-                        height="294"
                       />
                     </picture>
                     <p class="overlay">
@@ -728,82 +764,84 @@
     </main>
     <footer class="back-foot">
       <div class="container top-div">
-        <div class="div-addres">
-          <a class="link logo-foot" href="./index.html"
-            ><span class="web">Web</span>Studio</a
-          >
-          <address>
-            <ul class="list">
-              <li class="list-foot">
-                <a class="link foot-addres" href=""
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="list-foot">
-                <a class="link foot-contact" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+        <div class="mian-div">
+          <div class="div-addres">
+            <a class="link logo-foot" href="./index.html"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+            <address>
+              <ul class="list list__foot">
+                <li class="list-foot">
+                  <a class="link foot-addres" href=""
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="list-foot">
+                  <a class="link foot-contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="link foot-contact" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="div-h">
+            <h2 class="foot-title">ПРИЄДНУЙТЕСЬ</h2>
+            <ul class="list member-svg">
+              <li>
+                <a class="link-footer-svg" href="">
+                  <svg
+                    aria-label="Інстаграм"
+                    class="focus-footer-svg"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="link foot-contact" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="link-footer-svg" href="">
+                  <svg
+                    aria-label="Твіттер"
+                    class="focus-footer-svg"
+                    width="20"
+                    height="16.25"
+                  >
+                    <use href="./images/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-footer-svg" href="">
+                  <svg
+                    aria-label="Фейсбук"
+                    class="focus-footer-svg"
+                    width="10"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-footer-svg" href="">
+                  <svg
+                    aria-label="ЛінкАЙДІ"
+                    class="focus-footer-svg"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="div-h">
-          <h2 class="foot-title">ПРИЄДНУЙТЕСЬ</h2>
-          <ul class="list member-svg">
-            <li>
-              <a class="link-footer-svg" href="">
-                <svg
-                  aria-label="Інстаграм"
-                  class="focus-footer-svg"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link-footer-svg" href="">
-                <svg
-                  aria-label="Твіттер"
-                  class="focus-footer-svg"
-                  width="20"
-                  height="16.25"
-                >
-                  <use href="./images/icons.svg#icon-twitter1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link-footer-svg" href="">
-                <svg
-                  aria-label="Фейсбук"
-                  class="focus-footer-svg"
-                  width="10"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="link-footer-svg" href="">
-                <svg
-                  aria-label="ЛінкАЙДІ"
-                  class="focus-footer-svg"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form class="foot-form-main">
           <div class="foot-form-title-div">
@@ -814,6 +852,7 @@
                 name="user_mail"
                 class="foot-form-email"
                 placeholder="E-mail"
+                pattern="[a-zA-Z@.]+"
               />
             </label>
           </div>
@@ -828,5 +867,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
