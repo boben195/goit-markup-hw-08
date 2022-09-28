@@ -39,8 +39,15 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
 }
-.member-svg {
+.foot-member-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 60px;
 }
 .link-footer-svg {
@@ -62,13 +69,19 @@
 .focus-footer-svg {
   fill: currentColor;
 }
-@media screen and (max-width: 1199px){
-.foot-form-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and  (max-width: 767px) {
+  /*.foot-form-main {
+    width: 100%;
+  }*/
+  
 }
+@media screen and (max-width: 1199px) {
+  .foot-form-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .foot-form-title {
   display: flex;
@@ -76,7 +89,7 @@
   margin-bottom: 20px;
 }
 .foot-form-email {
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -90,53 +103,45 @@
 }
 
 @media screen and (min-width: 1200px) {
-  
-  
-  
   .mian-div {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-   
-  
-    .foot-title {
-      font-size: 14px;
-      line-height: 1.14;
-      color: #ffffff;
-      margin-bottom: 20px;
-    }
-  
-    .list-foot {
-      margin-bottom: 9px;
-    }
-  
-    .top-div {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-  
-    .div-addres {
-      display: block;
-      margin-right: 70px;
-    }
-  
-    .div-h {
-      display: block;
-      
-    }
+
+  .foot-title {
+    margin-bottom: 20px;
+  }
+
+  .list__foot {
+    margin-bottom: 0;
+  }
+  .member-svg {
+    margin-bottom: 0;
+  }
+
+  .top-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .div-addres {
+    display: block;
+    margin-right: 70px;
+  }
+
+  .div-h {
+    display: block;
+  }
   .foot-form-email {
     width: 358px;
+    margin-bottom: 0;
   }
   .foot-form-btn-div {
     display: flex;
-      align-items: center;
-   
   }
-    
 }
-
 
 /*
 .foot-addres {

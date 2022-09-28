@@ -1,3 +1,5 @@
+
+
 .svg-list {
   display: flex;
   flex-direction: row;
@@ -8,9 +10,9 @@
 .clien-li {
   width: 200px;
   height: 92px;
-border: 1px solid #afb1b8;
-border-radius: 4px;
-@extend %align;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  @extend %align;
   margin: 0 auto;
   transition: border-color var(--transition-dur-and-funk);
 
@@ -33,11 +35,9 @@ border-radius: 4px;
   .clien-li {
     width: 222px;
   }
-
 }
 @media screen and (min-width: 1200px) {
-
-.svg-list {
+  .svg-list {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -45,7 +45,6 @@ border-radius: 4px;
   .clien-li {
     width: 170px;
   }
-
 }
 /*
 .clien-li {
