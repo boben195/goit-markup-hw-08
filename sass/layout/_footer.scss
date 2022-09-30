@@ -4,6 +4,9 @@
   font-weight: 400;
   line-height: 1.7;
 }
+.member-svg {
+  margin-bottom: 60px;
+}
 
 .foot-contact {
   color: rgba(255, 255, 255, 0.6);
@@ -69,13 +72,11 @@
 .focus-footer-svg {
   fill: currentColor;
 }
-@media screen and  (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .foot-form-email {
     width: 220px;
     margin-right: 0;
-    
   }
-  
 }
 @media screen and (max-width: 1199px) {
   .foot-form-main {
@@ -112,11 +113,21 @@
   }
 
   .foot-title {
+    display: block;
     margin-bottom: 20px;
   }
-
+  .foot-member-svg {
+    margin-bottom: 0;
+  }
+  .logo-foot {
+    display: block;
+  }
   .list__foot {
     margin-bottom: 0;
+    display: block;
+  }
+  .list-foot {
+    margin-bottom: 9px;
   }
   .member-svg {
     margin-bottom: 0;
@@ -134,6 +145,9 @@
   }
 
   .div-h {
+    display: block;
+  }
+  .foot-form-title {
     display: block;
   }
   .foot-form-email {

@@ -17,6 +17,15 @@
     visibility: visible;
     pointer-events: auto;
   }
+ .menu-static {
+    color: var(--accent-color);
+  }
+  .menu-static-base {
+    color: var(--secondary-text-color);
+  }
+
+
+
 
   .mobile-menu__container {
     position: relative;
@@ -52,11 +61,13 @@
     margin-bottom: 306px;
   }
 
+ 
+
   .mobile-menu__navigation {
     font-style: normal;
     @include font(40px, 500, 1.18);
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+    /*color: var(--secondary-text-color);*/
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -104,6 +115,8 @@
 
   .mobile-list-social {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .mobile-menu-item__social {
     position: relative;
