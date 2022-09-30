@@ -1,5 +1,6 @@
 
 
+@media screen and (min-width: 480px) {
 .svg-list {
   display: flex;
   flex-direction: row;
@@ -31,6 +32,7 @@
   }
 }
 
+}
 @media screen and (min-width: 768px) {
   .clien-li {
     width: 222px;

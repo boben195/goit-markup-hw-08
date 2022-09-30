@@ -69,10 +69,12 @@
 .focus-footer-svg {
   fill: currentColor;
 }
-@media screen and  (max-width: 767px) {
-  /*.foot-form-main {
-    width: 100%;
-  }*/
+@media screen and  (min-width: 320px) and (max-width: 479px) {
+  .foot-form-email {
+    width: 220px;
+    margin-right: 0;
+    
+  }
   
 }
 @media screen and (max-width: 1199px) {

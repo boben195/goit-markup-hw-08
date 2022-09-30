@@ -1117,6 +1117,14 @@ ol {
 .color-member-team {
   background-color: #f5f4fa;
 }*/
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .svg-list {
+    gap: 5px;
+  }
+  .clien-li {
+    width: 120px;
+  }
+}
 .svg-list {
   display: flex;
   flex-direction: row;
@@ -1363,10 +1371,11 @@ ol {
   fill: currentColor;
 }
 
-@media screen and (max-width: 767px) {
-  /*.foot-form-main {
-    width: 100%;
-  }*/
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .foot-form-email {
+    width: 220px;
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 1199px) {
   .foot-form-main {
